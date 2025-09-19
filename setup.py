@@ -1,0 +1,41 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="lit_review",
+    version="0.1.0",
+    description="Literature Review Platform for Mathematics Education Research",
+    packages=find_packages(),
+    install_requires=[
+        "docling>=2.3.1",
+        "flask>=3.0.0",
+        "flask-cors>=4.0.0",
+        "sqlalchemy>=2.0.23",
+        "sentence-transformers>=2.2.2",
+        "chromadb>=0.4.22",
+        "pandas>=2.1.4",
+        "numpy>=1.24.3",
+        "requests>=2.31.0",
+        "python-dotenv>=1.0.0",
+        "pydantic>=2.5.1",
+        "tqdm>=4.66.1",
+        "python-magic>=0.4.27",
+        "beautifulsoup4>=4.12.2",
+        "lxml>=4.9.3",
+        "nltk>=3.8.1",
+        "spacy>=3.7.2",
+        "scikit-learn>=1.3.2",
+        "plotly>=5.18.0",
+        "networkx>=3.2.1",
+        "PyPDF2>=3.0.1",
+        "pymupdf>=1.23.14",
+        "transformers>=4.36.2",
+        "torch>=2.1.2",
+        "faiss-cpu>=1.7.4",
+    ],
+    python_requires=">=3.8",
+    entry_points={
+        "console_scripts": [
+            "lit-review=lit_review.cli:main",
+        ],
+    },
+)
